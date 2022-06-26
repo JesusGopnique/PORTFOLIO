@@ -1,0 +1,56 @@
+create table users (name varchar(8) null, surname varchar(8) null, age int(3) null, login varchar(8) null, password char(16) null, email char(20) null);
+
+insert into users values ('Nick', 'Brown', '32', 'LogNick', '12pass', 'nick@gmail.com'),
+('Mike', 'Tobler', '26', 'SunF', '12qwerty', 'sunF@mail.ru'),
+('Kate', 'Brown', '28', 'Katitty', '4test*12', 'KateBrown@mail.ru'),
+('Nick', 'Bonner', '21', 'FlQSt', '12qweq', 'BonNick@yandex.ru'),
+('Tom', 'Boyer', '40', 'preSTOM', '4test*12', 'preSTOM@tut.by'),
+('Alex', 'Lord', '26', 'nutt7', '2floppynut', 'lord@gmail.com');
+
+delete from users where name="Alex";
+
+
+update users set name="Mike" where name="Nick";
+
+delete from users;
+
+
+
+
+Çŕäŕíčĺ 1 
+1. select * from customers where city=”London”;
+2. select CustomerName, ContactName from customers where address like "%23";
+3.select distinct city from customers;
+4. select * from customers where PostalCode<1;
+5. select * from customers where country is not "USA";
+6. select * from customers where country="France" order by CustomerName desc;
+7. select * from customers where country="USA" or country="Germany" limit 10;
+
+
+Çŕäŕíčĺ 2 
+1. select * from products where ProductName like "M%";
+2. select unit from products where productname="Steeleye Stout";
+3. select * from products where price>22;
+4. select * from products where unit=250;
+5. select productname from products where unit like "%bottles%";
+6. select * from products where SupplierID=7 order by price desc;
+
+Çŕäŕíčĺ 3
+select * from character where level>45 or race="dwarf";
+select * from Employees where BirthDate < "1960-12-31";
+
+
+Çŕäŕíčĺ 4 
+1. select LastName, FirstName, Notes from Employees;
+2. select * from employees where birthdate<"1960%";
+3. select BirthDate from Employees where firstname like "A%";
+4. select LastName, FirstName, BirthDate from Employees order by BirthDate;
+
+Çŕäŕíčĺ 5
+1. select name, email from users where age>30;
+2. select * from users where surname like "B%";
+3. select password from users where password like "%12";
+4. select * from users where email like "%Nick%";
+5. select distinct age from users;
+6. select name, login, password, email from users order by name;
+7. select * from users where name="Nick" and surname="Bonner";
