@@ -80,4 +80,4 @@
 // } else {console.log('Not number')}
 // }
 
-// checkAe("regewgwr")
+// checkAge("regewgwr")
